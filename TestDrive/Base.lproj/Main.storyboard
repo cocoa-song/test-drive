@@ -14,7 +14,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-LU-OCD">
+                                <rect key="frame" x="125.5" y="806" width="163" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rwt-me-RYD">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="30"/>
+                                        <state key="normal" title="rotate"/>
+                                        <connections>
+                                            <action selector="rotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xV-jU-3sY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFM-1e-sAY">
+                                        <rect key="frame" x="61" y="0.0" width="41" height="30"/>
+                                        <state key="normal" title="move"/>
+                                        <connections>
+                                            <action selector="move:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDU-38-nF7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5V3-z2-jpz">
+                                        <rect key="frame" x="122" y="0.0" width="41" height="30"/>
+                                        <state key="normal" title="scale"/>
+                                        <connections>
+                                            <action selector="scale:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QMp-8J-Kgz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lLc-LU-OCD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A47-Dp-nv4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lLc-LU-OCD" secondAttribute="bottom" constant="26" id="wqs-XX-9cA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

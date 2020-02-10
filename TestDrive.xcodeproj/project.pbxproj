@@ -13,9 +13,35 @@
 		CC1A543B23EAA3D900BE7BA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A543923EAA3D900BE7BA4 /* Main.storyboard */; };
 		CC1A543D23EAA3DA00BE7BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1A543C23EAA3DA00BE7BA4 /* Assets.xcassets */; };
 		CC1A544023EAA3DA00BE7BA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A543E23EAA3DA00BE7BA4 /* LaunchScreen.storyboard */; };
-		CC1A544D23EAA76600BE7BA4 /* CAShapeLayer+Ants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A544A23EAA76600BE7BA4 /* CAShapeLayer+Ants.swift */; };
-		CC1A544E23EAA76600BE7BA4 /* MarchingAnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A544B23EAA76600BE7BA4 /* MarchingAnts.swift */; };
+		CC8FD2CA23F0E194003F2670 /* MarchingAnts.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8FD2C823F0E194003F2670 /* MarchingAnts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC8FD2CD23F0E194003F2670 /* MarchingAnts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD2C623F0E194003F2670 /* MarchingAnts.framework */; };
+		CC8FD2CE23F0E194003F2670 /* MarchingAnts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD2C623F0E194003F2670 /* MarchingAnts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC8FD2D223F0E1C5003F2670 /* MarchingAnts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A544B23EAA76600BE7BA4 /* MarchingAnts.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC8FD2CB23F0E194003F2670 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC1A542823EAA3D900BE7BA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC8FD2C523F0E194003F2670;
+			remoteInfo = MarchingAnts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC2AFB8C23F0E11000BFC987 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC8FD2CE23F0E194003F2670 /* MarchingAnts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CC1A543023EAA3D900BE7BA4 /* TestDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,12 +52,22 @@
 		CC1A543C23EAA3DA00BE7BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC1A543F23EAA3DA00BE7BA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC1A544123EAA3DA00BE7BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC1A544A23EAA76600BE7BA4 /* CAShapeLayer+Ants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAShapeLayer+Ants.swift"; sourceTree = "<group>"; };
 		CC1A544B23EAA76600BE7BA4 /* MarchingAnts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarchingAnts.swift; sourceTree = "<group>"; };
+		CC8FD2C623F0E194003F2670 /* MarchingAnts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MarchingAnts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8FD2C823F0E194003F2670 /* MarchingAnts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarchingAnts.h; sourceTree = "<group>"; };
+		CC8FD2C923F0E194003F2670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CC1A542D23EAA3D900BE7BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD2CD23F0E194003F2670 /* MarchingAnts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8FD2C323F0E194003F2670 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CC1A543223EAA3D900BE7BA4 /* TestDrive */,
+				CC8FD2C723F0E194003F2670 /* MarchingAnts */,
 				CC1A543123EAA3D900BE7BA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CC1A543023EAA3D900BE7BA4 /* TestDrive.app */,
+				CC8FD2C623F0E194003F2670 /* MarchingAnts.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,13 +105,32 @@
 				CC1A543C23EAA3DA00BE7BA4 /* Assets.xcassets */,
 				CC1A543E23EAA3DA00BE7BA4 /* LaunchScreen.storyboard */,
 				CC1A544123EAA3DA00BE7BA4 /* Info.plist */,
-				CC1A544A23EAA76600BE7BA4 /* CAShapeLayer+Ants.swift */,
-				CC1A544B23EAA76600BE7BA4 /* MarchingAnts.swift */,
 			);
 			path = TestDrive;
 			sourceTree = "<group>";
 		};
+		CC8FD2C723F0E194003F2670 /* MarchingAnts */ = {
+			isa = PBXGroup;
+			children = (
+				CC1A544B23EAA76600BE7BA4 /* MarchingAnts.swift */,
+				CC8FD2C823F0E194003F2670 /* MarchingAnts.h */,
+				CC8FD2C923F0E194003F2670 /* Info.plist */,
+			);
+			path = MarchingAnts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC8FD2C123F0E194003F2670 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD2CA23F0E194003F2670 /* MarchingAnts.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CC1A542F23EAA3D900BE7BA4 /* TestDrive */ = {
@@ -83,10 +140,12 @@
 				CC1A542C23EAA3D900BE7BA4 /* Sources */,
 				CC1A542D23EAA3D900BE7BA4 /* Frameworks */,
 				CC1A542E23EAA3D900BE7BA4 /* Resources */,
+				CC2AFB8C23F0E11000BFC987 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC8FD2CC23F0E194003F2670 /* PBXTargetDependency */,
 			);
 			name = TestDrive;
 			packageProductDependencies = (
@@ -94,6 +153,24 @@
 			productName = TestDrive;
 			productReference = CC1A543023EAA3D900BE7BA4 /* TestDrive.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CC8FD2C523F0E194003F2670 /* MarchingAnts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8FD2D123F0E194003F2670 /* Build configuration list for PBXNativeTarget "MarchingAnts" */;
+			buildPhases = (
+				CC8FD2C123F0E194003F2670 /* Headers */,
+				CC8FD2C223F0E194003F2670 /* Sources */,
+				CC8FD2C323F0E194003F2670 /* Frameworks */,
+				CC8FD2C423F0E194003F2670 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarchingAnts;
+			productName = MarchingAnts;
+			productReference = CC8FD2C623F0E194003F2670 /* MarchingAnts.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -106,6 +183,9 @@
 				ORGANIZATIONNAME = kinemaster;
 				TargetAttributes = {
 					CC1A542F23EAA3D900BE7BA4 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CC8FD2C523F0E194003F2670 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -126,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				CC1A542F23EAA3D900BE7BA4 /* TestDrive */,
+				CC8FD2C523F0E194003F2670 /* MarchingAnts */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +222,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC8FD2C423F0E194003F2670 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,14 +237,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC1A543823EAA3D900BE7BA4 /* ViewController.swift in Sources */,
-				CC1A544E23EAA76600BE7BA4 /* MarchingAnts.swift in Sources */,
-				CC1A544D23EAA76600BE7BA4 /* CAShapeLayer+Ants.swift in Sources */,
 				CC1A543423EAA3D900BE7BA4 /* AppDelegate.swift in Sources */,
 				CC1A543623EAA3D900BE7BA4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC8FD2C223F0E194003F2670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD2D223F0E1C5003F2670 /* MarchingAnts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC8FD2CC23F0E194003F2670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC8FD2C523F0E194003F2670 /* MarchingAnts */;
+			targetProxy = CC8FD2CB23F0E194003F2670 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CC1A543923EAA3D900BE7BA4 /* Main.storyboard */ = {
@@ -295,6 +397,7 @@
 		CC1A544523EAA3DA00BE7BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y59HNQR68T;
@@ -313,6 +416,7 @@
 		CC1A544623EAA3DA00BE7BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y59HNQR68T;
@@ -325,6 +429,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC8FD2CF23F0E194003F2670 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y59HNQR68T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarchingAnts/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinemaster.MarchingAnts;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC8FD2D023F0E194003F2670 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y59HNQR68T;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MarchingAnts/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kinemaster.MarchingAnts;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -345,6 +503,15 @@
 			buildConfigurations = (
 				CC1A544523EAA3DA00BE7BA4 /* Debug */,
 				CC1A544623EAA3DA00BE7BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC8FD2D123F0E194003F2670 /* Build configuration list for PBXNativeTarget "MarchingAnts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8FD2CF23F0E194003F2670 /* Debug */,
+				CC8FD2D023F0E194003F2670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
